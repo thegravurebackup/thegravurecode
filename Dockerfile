@@ -27,7 +27,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
-RUN sudo apt-get install -y ubuntu-make
+# RUN sudo apt-get install -y ubuntu-make
 
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 RUN sudo apt-get install -y nodejs
